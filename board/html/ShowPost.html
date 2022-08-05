@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/ShowPost.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="BoardDetailWrapper">
+      <div class="BoardDetailHeader">
+        <input type="text" class="search" />
+        <span class="material-symbols-outlined"> search </span>
+        <h1>학과 게시판</h1>
+      </div>
+      <article class="BoardDetail">
+        <div class="title">제목</div>
+        <div class="content">본문</div>
+        <div class="replDiv">
+          <div>댓글count</div>
+          <div class="repl">
+            <p>댓글1</p>
+            <p>댓글2</p>
+          </div>
+        </div>
+      </article>
+      <div class="BoardFooter">
+        <form action="">
+          <textarea name="repl" id="repl" cols="30" rows="10"></textarea>
+          <button>작성</button>
+        </form>
+      </div>
+      <div class="BoardPaging">
+        <div>이전글</div>
+        <div>다음글</div>
+      </div>
+    </div>
+  </body>
+</html>

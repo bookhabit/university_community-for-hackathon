@@ -1,0 +1,81 @@
+.BoardDetailWrapper{
+    /* border: 1px solid black; */
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.BoardDetailHeader{
+    width: auto;
+    min-height: 60px;
+}
+
+.BoardDetailHeader > h1{
+    display: inline;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.BoardDetailHeader > span {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    float: right;
+    
+}
+.BoardDetailHeader > input{
+    width: 300px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    float: right;
+    font-size: large;
+}
+
+.BoardDetail{
+    border: 1px solid black;
+    min-height: 100vw;
+    padding: 20px;
+}
+
+.BoardDetail> .title{
+    border: 1px solid black;
+    min-height: 10vw;
+}
+.BoardDetail> .content{
+    border: 1px solid black;
+    min-height: 60vw;
+}
+.BoardDetail> .replDiv{
+    border: 1px solid black;
+    min-height: 30vw;
+}
+
+.BoardFooter{
+    border: 1px solid black;
+    min-height: 30px;
+    padding: 20px;
+    
+}
+.BoardFooter>form{
+    all: unset;
+}
+
+.BoardFooter >form>textarea{
+    width: 100%;
+
+}
+.BoardFooter >form> button{
+    float: right;
+    margin-bottom: 5px;
+}
+
+.BoardPaging{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px auto;
+    width: 200px;
+}
+
