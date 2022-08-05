@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Single+Day&family=Uchen&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Single+Day&display=swap');
+    </style>
+    <title>University Lecture</title>
+</head>
+<body>
+    <div class="container">
+        <header id="intro">
+            <nav>
+                <ul>
+                    <li class="login"><a href="#">LOGIN</a></li>
+                    <li class="join"><a href="#">JOIN</a></li>
+                    <li class="mypage"><a href="#">MYPAGE</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <input type="checkbox" id="icon">
+    <label for="icon"> 
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <div id="menu">
+        <ul>
+            <br>
+            <br>
+
+            <li>
+                <p>인문계열</p>
+                <ul class="submenu">
+                    <li><a href="#" onclick=""> - 심리학과</a></li>
+                    <li><a href="#" onclick=""> - 문헌정보학과</a></li>
+                    <li><a href="#" onclick=""> - 언어학과</a></li>
+                </ul>
+            </li>
+            <br>
+
+            <li>
+                <p>사회계열</p>
+                <ul class="submenu">
+                    <li><a href="#" onclick=""> - 경영학과</a></li>
+                    <li><a href="#" onclick=""> - 광고홍보학과</a></li>
+                    <li><a href="#" onclick=""> - 사회복지학과</a></li>
+                </ul>
+            </li>
+            <br>
+
+            <li>
+                <p>교육계열</p>
+                <ul class="submenu">
+                    <li><a href="#" onclick=""> - 유아교육과</a></li>
+                    <li><a href="#" onclick=""> - 초등교육과</a></li>
+                    <li><a href="#" onclick=""> - 특수교육과</a></li>
+                </ul>
+            </li>
+            <br>
+
+            <li>
+                <p>자연계열</p>
+                <ul class="submenu">
+                    <li><a href="#" onclick=""> - 물리학과</a></li>
+                    <li><a href="#" onclick=""> - 식품영양학과</a></li>
+                    <li><a href="#" onclick=""> - 통계학과</a></li>
+                </ul>
+            </li>
+            <br>
+
+            <li>
+                <p>공학계열</p>
+                <ul class="submenu">
+                    <li><a href="#" onclick=""> - 기계공학과</a></li>
+                    <li><a href="#" onclick=""> - 컴퓨터공학과</a></li>
+                    <li><a href="#" onclick=""> - 건축학과</a></li>
+                </ul>
+            </li>
+            <br>
+
+            <li>
+                <p>의약계열</p>
+                <ul class="submenu">
+                    <li><a href="#" onclick=""> - 약학과</a></li>
+                    <li><a href="#" onclick=""> - 의학과</a></li>
+                    <li><a href="#" onclick=""> - 간호학과</a></li>
+                </ul>
+            </li>
+            <br>
+
+            <li>
+                <p>예체능계열</p>
+                <ul class="submenu">
+                    <li><a href="#" onclick=""> - 체육학과</a></li>
+                    <li><a href="#" onclick=""> - 뷰티아트과</a></li>
+                    <li><a href="#" onclick=""> - 디자인학과</a></li>
+                </ul>
+            </li>
+            <br>
+        </ul>
+    </div>
+
+
+    <div class="board" style="position:relative;">
+        <img src="img\board.png" alt="">
+    </div>
+
+    <br><br>
+    <h3>CERTIFICATE</h3>
+    <br>
+
+    <div id="grid">
+        <section>
+            <div class="icons" onclick="">인문계열</div>
+            <img class="img_section" type="image" name="인문계열" src="img\icon1.png">
+        </section>
+
+        <section>
+            <div class="icons" onclick="">사회계열</div>
+            <img class="img_section" type="image" name="사회계열" src="img\icon2.png">
+        </section>
+
+        <section>
+            <div class="icons" onclick="">교육계열</div>
+            <img class="img_section" type="image" name="교육계열" src="img\icon3.png">
+        </section>
+
+        <section>
+            <div class="icons" onclick="">자연계열</div>
+            <img class="img_section" type="image" name="자연계열" src="img\icon4.png">
+        </section>
+
+        <section>
+            <div class="icons" onclick="">공학계열</div>
+            <img class="img_section" type="image" name="공학계열" src="img\icon5.png">
+        </section>
+
+        <section>
+            <div class="icons" onclick="">의약계열</div>
+            <img class="img_section" type="image" name="의약계열" src="img\icon6.png">
+        </section>
+
+        <section>
+            <div class="icons" onclick="">예체능계열</div>
+            <img class="img_section" type="image" name="예체능계열" src="img\icon7.png">
+        </section>
+    </div>
+
+        
+        <div id="mainWrapper">
+            <h3>NOTICE</h3>
+            <ul>
+                <!-- 게시판 목록  -->
+                <li>
+                    <ul id ="ulTable">
+                        <li>
+                            <ul>
+                                <li>No</li>
+                                <li>제목</li>
+                                <li>작성일</li>
+                                <li>작성자</li>
+                                <li>조회수</li>
+                            </ul>
+                        </li>
+                        <!-- 게시물이 출력될 영역 -->
+                        <li>
+                            <ul>
+                                <li>1</li>
+                                <li class="left">제목1</li>
+                                <li>2022.08.03</li>
+                                <li>사용자1</li>
+                                <li>0</li>
+                            </ul>
+                        </li>
+    
+                        <li>
+                            <ul>
+                                <li>2</li>
+                                <li class="left">제목2</li>
+                                <li>2022.08.03</li>
+                                <li>사용자2</li>
+                                <li>0</li>
+                            </ul>
+                        </li>
+    
+                        <li>
+                            <ul>
+                                <li>3</li>
+                                <li class="left">제목3</li>
+                                <li>2022.08.03</li>
+                                <li>사용자3</li>
+                                <li>0</li>
+                            </ul>
+                        </li>
+    
+                        <li>
+                            <ul>
+                                <li>4</li>
+                                <li class="left">제목4</li>
+                                <li>2022.08.03</li>
+                                <li>사용자4</li>
+                                <li>0</li>
+                            </ul>
+                        <li>      
+                            
+                        <li>
+                            <ul>
+                                <li>5</li>
+                                <li class="left">제목5</li>
+                                <li>2022.08.03</li>
+                                <li>사용자5</li>
+                                <li>0</li>
+                                </ul>
+                            <li>      
+                    </ul>
+                </li>
+    
+                <!-- 게시판 페이징 영역 -->
+                <li>
+                    <div id="divPaging">
+                        <div>◀</div>
+                        <div><b>1</b></div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>▶</div>
+                    </div>
+                </li>
+    
+                <!-- 검색 폼 영역 -->
+                <li id='liSearchOption'>
+                    <div>
+                        <select id='selSearchOption' >
+                            <option value='A'>제목+내용</option>
+                            <option value='T'>제목</option>
+                            <option value='C'>내용</option>
+                        </select>
+                        <input id='txtKeyWord' />
+                        <input type='button' value='검색'/>
+                    </div>
+                    </li>
+            </ul>
+        </div>
+
+        <footer>
+            <div class="myfooter">
+                <div class="content">
+                    <li>
+                        <h4>SOCIAL</h4>
+                        <br>
+                        <ul>
+                        <li><a href="https://www.instagram.com/likelion_hsu/" onclick="">INSTAGRAM</a></li>
+                        <li><a href="https://cafe.naver.com/likelionhs">NAVER CAFE</a></li>
+                        <li><a href="">BLOG</a></li>
+                        </ul>
+                    </li>
+                </div>
+
+                <div class="content">
+                    <li>
+                        <h4>HELP</h4>
+                        <br>
+                        <ul>
+                        <li><a href="#" onclick="">MYPAGE</a></li>
+                        <li><a href="#" onclick="">HELP&FAQ</a></li>
+                        <li><a href="#" onclick="">Q&A</a></li>
+                        </ul>
+                    </li>
+                </div>
+
+                <div class="content">
+                    <li>
+                        <h4>INFO</h4>
+                        <br>
+                        <ul>
+                        <li><a href="#" onclick="">PRIVACY POLICY</a></li>
+                        <li><a href="#" onclick="">AGREEMENT</a></li>
+                        </ul>
+                    </li>
+                </div>
+                <h1>A University Lecture</h1>
+            </div>
+        </footer>
+</body>
+</html>

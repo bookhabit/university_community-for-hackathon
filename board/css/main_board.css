@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&family=Uchen&display=swap');
+
+.mainBoardTitle {   
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+
+
+.mainBoardTitle > button{
+    float: right;
+    margin-right: 100px;
+    margin-top: 20px;
+    font-size: large;
+    background-color: rgb(240, 231, 231);
+    cursor: pointer;
+}
+.mainBoardWrapper{
+    border: 2px solid black;
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Uchen', serif;
+}
+
+/* hover 마우스 올릴때와  active 클릭할 때 css */
+.mainBoardTitle > button:hover{
+    background-color: rgb(185, 208, 212);
+}
+.mainBoardTitle > button:active{
+    background-color: rgb(168, 153, 153);
+}
+
+.mainBoard{
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+
+}
+
+.mainBoard > h2{
+    margin-left: 10px;
+    color: rgb(219, 28, 28);
+}
+.mainBoard > ul{
+    all:unset
+}
+
+.mainBoard > ul> li{
+    border: 1px solid rgb(150, 145, 145);   
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+    font-size: 20px;
+    line-height:20px;
+    font-weight: 200;
+    cursor: pointer;
+    color: #000000;
+    font-weight: bold;
+}
+
+.mainBoard> ul > li:hover{
+    color: rgb(214, 161, 161);
+}
+
+.mainBoard >ul> li:active{
+    color: rgb(184, 48, 48);
+}
