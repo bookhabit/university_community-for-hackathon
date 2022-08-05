@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Single+Day&family=Uchen&display=swap');
 
+.mainBoardWrapper{
+    position: relative;
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Uchen', serif;
+}
+
 .mainBoardTitle {   
     position: relative;
     top: 10px;
-    left: 50px;
+    left: 30px;
 }
 
 
@@ -15,14 +24,7 @@
     background-color: rgb(240, 231, 231);
     cursor: pointer;
 }
-.mainBoardWrapper{
-    border: 2px solid black;
-    width: 90%;
-    margin: 0px auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-family: 'Uchen', serif;
-}
+
 
 /* hover 마우스 올릴때와  active 클릭할 때 css */
 .mainBoardTitle > button:hover{
@@ -33,6 +35,7 @@
 }
 
 .mainBoard{
+    border: 1px solid black;
     margin-left: 20px;
     margin-right: 10px;
     margin-bottom: 20px;
