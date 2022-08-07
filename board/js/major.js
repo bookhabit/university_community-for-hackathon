@@ -13,7 +13,7 @@ const PostListString = window.localStorage.getItem("postList");
 const PostList = JSON.parse(PostListString);
 // console.log(PostList);
 
-// 제목, 본문, 댓글에  객체형식으로 innerText로 넣어보기
+// li에 PostList의 title을 가져와서 각각 배치시키기
 const post1 = document.querySelector("#post1");
 const post2 = document.querySelector("#post2");
 const post3 = document.querySelector("#post3");
@@ -22,6 +22,17 @@ post1.innerHTML = PostList[0].title;
 post2.innerHTML = PostList[1].title;
 post3.innerHTML = PostList[2].title;
 
-// navigate(`${"/post/" + postID}`);
+// li요소와  textnode 속성값 만들고 PostList의 title을 넣어서 DOM요소에 추가하기
+var ul = document.querySelector("#ul"); // 게시글 목록 ul 요소에 접근 (부모요소될것)
+console.log(ul);
+
+// 텍스트 노드와 li를 PostList에 있는 만큼 생성
+for (var i = 0; i < PostList.length; i++) {
+  var li = document.createElement("li");
+  var newPostTitle = document.createTextNode(PostList[i].title);
+  li.appendChild(newPostTitle);
+
+  ul.appendChild(li);
+}
 
 // pagination
