@@ -42,12 +42,17 @@
 .BoardDetail> .title{
     border: 1px solid black;
     min-height: 10vw;
+    text-align: center;
 }
 .BoardDetail> .content{
     border: 1px solid black;
     min-height: 60vw;
 }
+
+
+
 .BoardDetail> .replDiv{
+
     border: 1px solid black;
     min-height: 30vw;
 }
