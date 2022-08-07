@@ -4,7 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>전체게시판페이지</title>
+    <link rel="stylesheet" href="../css/board_detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="BoardDetailWrapper">
+      <div class="BoardDetailHeader">
+        <input type="text" class="search" />
+        <span class="material-symbols-outlined"> search </span>
+        <h1>전체 게시판</h1>
+      </div>
+      <article class="BoardDetail">
+        <ul>
+          <li>게시글 1</li>
+          <li>게시글 2</li>
+          <li>게시글 3</li>
+          <li>게시글 4</li>
+          <li>게시글 5</li>
+        </ul>
+      </article>
+      <div class="BoardFooter">
+        <button>글쓰기</button>
+        <button>좋아요 누른 글</button>
+        <button>내가 쓴 글</button>
+        <button>저장 해놓은 글</button>
+      </div>
+      <div class="BoardPaging">
+        <div>◀</div>
+        <div><b>1</b></div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>▶</div>
+      </div>
+    </div>
+  </body>
 </html>

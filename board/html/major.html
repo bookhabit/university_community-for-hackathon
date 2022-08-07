@@ -20,7 +20,7 @@
       </div>
       <article class="BoardDetail">
         <ul>
-          <li>게시글 1</li>
+          <li onclick="goShowPost()">게시글 1</li>
           <li>게시글 2</li>
           <li>게시글 3</li>
           <li>게시글 4</li>
@@ -28,7 +28,7 @@
         </ul>
       </article>
       <div class="BoardFooter">
-        <button>글쓰기</button>
+        <button onclick="goWritePost()">글쓰기</button>
         <button>좋아요 누른 글</button>
         <button>내가 쓴 글</button>
         <button>저장 해놓은 글</button>
@@ -43,5 +43,14 @@
         <div>▶</div>
       </div>
     </div>
+
+    <script>
+      function goShowPost() {
+        location.href = "ShowPost.html";
+      }
+      function goWritePost() {
+        location.href = "WritePost.html";
+      }
+    </script>
   </body>
 </html>

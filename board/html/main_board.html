@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>main_board</title>
     <link rel="stylesheet" href="../css/main_board.css" />
   </head>
   <body>
+    <button id="major">학과</button>
+    <button id="certificate">자격증</button>
+    <button id="employment">취업</button>
     <div class="mainBoardWrapper">
-    <div class="mainBoardTitle">
-      <button>더보기+</button>
-      <h1>전체 게시판</h1>
-    </div>
-    
+      <div class="mainBoardTitle">
+        <button id="detailBtn">더보기+</button>
+        <h1>전체 게시판</h1>
+      </div>
+
       <div class="mainBoard">
         <h2><인기글 TOP5></h2>
         <ul>
@@ -25,6 +25,34 @@
         </ul>
       </div>
     </div>
-  </div>
+    <script>
+      // 전체게시판 더보기 버튼 > 전체게시판 게시글로 이동
+      const detailBtn = document.querySelector("#detailBtn");
+      console.log(detailBtn);
+
+      function goAllBoard() {
+        location.href = "All_board.html";
+      }
+      detailBtn.addEventListener("click", goAllBoard);
+
+      // 학과 자격증 취업 > 각각 게시판페이지로 이동
+      const majorBtn = document.querySelector("#major");
+
+      const certificateBtn = document.querySelector("#certificate");
+
+      const employmentBtn = document.querySelector("#employment");
+
+      majorBtn.addEventListener("click", () => {
+        location.href = "major.html";
+      });
+
+      certificateBtn.addEventListener("click", () => {
+        location.href = "certification.html";
+      });
+
+      employmentBtn.addEventListener("click", () => {
+        location.href = "employment.html";
+      });
+    </script>
   </body>
 </html>
