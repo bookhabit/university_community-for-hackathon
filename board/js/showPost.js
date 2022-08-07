@@ -10,6 +10,7 @@ const title = document.querySelector(".BoardDetail .title");
 const content = document.querySelector(".BoardDetail .content");
 const repl = document.querySelector(".replDiv .repl");
 console.log(title, content, repl);
+
 title.innerHTML = PostList[0].title;
 content.innerHTML = PostList[0].content;
 repl.innerHTML = PostList[0].comment[0].text;
