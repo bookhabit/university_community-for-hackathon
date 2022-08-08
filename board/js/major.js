@@ -8,7 +8,7 @@ const showPost = (e) => {
   // console.log(e.target.innerText[0]);
   const POSTINDEX = e.target.innerText[0] - 1; //[0] 인덱스는 첫번째 문자를 뜻하고 화면에 출력할 때 +1을 해줬기 떄문에 실제데이터에 접근할 때는 -1을 해줘야함
   console.log(POSTINDEX);
-  location.href = "showPost.html" + POSTINDEX;
+  location.href = "showPost.html?type=" + POSTINDEX;
 };
 
 // localStorage에 저장되어있는 게시글 배열가져와서 게시글 목록 렌더링

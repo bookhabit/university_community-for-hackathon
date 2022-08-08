@@ -62,5 +62,5 @@ const tempPostList = [
 // 객체를 JSON문자열로 변환
 const PostListStrings = JSON.stringify(tempPostList);
 
-// setItem   (key, value)
+// setItem   (key, value) - localStorage에 저장하기
 window.localStorage.setItem("postList", PostListStrings);
