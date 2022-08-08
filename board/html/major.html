@@ -12,6 +12,7 @@
     />
   </head>
   <body>
+    <script src="../js/PostList.js"></script>
     <div class="BoardDetailWrapper">
       <div class="BoardDetailHeader">
         <input type="text" class="search" />
@@ -19,13 +20,7 @@
         <h1>학과 게시판</h1>
       </div>
       <article class="BoardDetail">
-        <ul id="ul">
-          <li id="post1" onclick="goShowPost()">게시글 1</li>
-          <li id="post2" onclick="goShowPost()">게시글 2</li>
-          <li id="post3" onclick="goShowPost()">게시글 3</li>
-          <li>게시글 4</li>
-          <li>게시글 5</li>
-        </ul>
+        <ul id="ul"></ul>
       </article>
       <div class="BoardFooter">
         <button onclick="goWritePost()">글쓰기</button>

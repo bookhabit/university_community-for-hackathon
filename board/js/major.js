@@ -14,13 +14,13 @@ const PostList = JSON.parse(PostListString);
 // console.log(PostList);
 
 // li에 PostList의 title을 가져와서 각각 배치시키기
-const post1 = document.querySelector("#post1");
-const post2 = document.querySelector("#post2");
-const post3 = document.querySelector("#post3");
+// const post1 = document.querySelector("#post1");
+// const post2 = document.querySelector("#post2");
+// const post3 = document.querySelector("#post3");
 
-post1.innerHTML = PostList[0].title;
-post2.innerHTML = PostList[1].title;
-post3.innerHTML = PostList[2].title;
+// post1.innerHTML = PostList[0].title;
+// post2.innerHTML = PostList[1].title;
+// post3.innerHTML = PostList[2].title;
 
 // li요소와  textnode 속성값 만들고 PostList의 title을 넣어서 DOM요소에 추가하기
 var ul = document.querySelector("#ul"); // 게시글 목록 ul 요소에 접근 (부모요소될것)
@@ -35,4 +35,5 @@ for (var i = 0; i < PostList.length; i++) {
   ul.appendChild(li);
 }
 
+console.log(PostList.length);
 // pagination
