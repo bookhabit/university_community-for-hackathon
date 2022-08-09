@@ -1,3 +1,20 @@
+// 학과 저장하는 객체
+const major = {
+  engineering: [
+    "기계공학과",
+    "컴퓨터공학과",
+    "전기-전자공학과",
+    "환경공학과",
+    "건축공학과",
+  ],
+};
+
+// 객체를 JSON문자열로 변환
+const majorListStrings = JSON.stringify(major);
+
+// setItem   (key, value) - localStorage에 저장하기
+window.localStorage.setItem("major", majorListStrings);
+
 // 임시로 만든 게시글들  (localStorage에 저장할 객체)
 const tempPostList = [
   {

@@ -42,4 +42,14 @@ for (var i = 0; i < PostList.length; i++) {
 }
 
 console.log(PostList.length);
-// pagination
+
+// h1 요소  title 데이터 가져와서 렌더링하기
+const majorString = window.localStorage.getItem("major");
+
+// 가져온 JSON 문자열을 객체로 변환
+const majorList = JSON.parse(majorString);
+console.log(majorList.engineering);
+
+const h1Title = document.querySelector("#majorTitle");
+console.log(h1Title);
+h1Title.innerText = majorList.engineering[0];
